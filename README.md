@@ -7,18 +7,6 @@
 - JAVA 11
 - Spring Boot 2.5.2
 
-# 실행 스크립트
-
-```bash
-#!/bin/bash
-
-if [ -f process.pid ]; then 
-    kill -9 `cat process.pid` 
-fi 
-
-nohup java -jar process.jar > /dev/null 2>&1 & echo $! > process.pid
-```
-
 # 기술 스택
 
 ## Server-side
